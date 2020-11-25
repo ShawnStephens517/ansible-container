@@ -6,7 +6,7 @@ COPY requirements.txt /tmp/requirements.txt
 
 RUN echo "Updating the Image with the latest" && \
     dnf update -y && \
-    dnf install python3-pip curl wget -y && \
+    dnf install python3-pip curl wget git -y && \
     pwd && \
     python3 -m pip install -r /tmp/requirements.txt && rm /tmp/requirements.txt
 
