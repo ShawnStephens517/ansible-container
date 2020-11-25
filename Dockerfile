@@ -6,7 +6,6 @@ COPY requirements.txt /tmp/requirements.txt
 
 RUN echo "Updating the Image with the latest" && \
     dnf update -y && \
-    dnf install sshpass -y && \
     dnf install python3-pip curl wget -y && \
     pwd && \
     python3 -m pip install -r /tmp/requirements.txt && rm /tmp/requirements.txt
