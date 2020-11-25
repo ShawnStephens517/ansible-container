@@ -1,5 +1,5 @@
 psycopg2-binary
 pyvmomi
 ansible
-
+vcd-cli
 
